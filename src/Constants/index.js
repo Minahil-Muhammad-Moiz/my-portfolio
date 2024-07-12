@@ -1,5 +1,6 @@
 import { CgClose } from "react-icons/cg";
 import { MdMenu } from "react-icons/md";
+import Logo from '../Assets/transparent_logo.png'
 
 export const icons = {
   open: MdMenu,
@@ -33,3 +34,8 @@ export const Navlinks = [
     path: "#contact",
   },
 ];
+
+export const Images = {
+  Logo: Logo
+
+}
