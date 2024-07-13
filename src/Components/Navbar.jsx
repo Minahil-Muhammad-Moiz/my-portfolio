@@ -7,16 +7,14 @@ const Navbar = () => {
     setnavigation(!navigation);
   };
   return (
-    <nav>
-      <div className="w-full fixed bg-zinc-900 h-20 flex justify-between items-center text-white px-6 md:px-10 backdrop-blur-lg font-mono">
+    <nav className="fixed w-full">
+      <div className="w-full bg-zinc-900 h-20 flex justify-between items-center text-white px-6 md:px-10 font-sans">
         <a href={'#home'} className="">
         <img src={Images.Logo} alt="MMM logo" width={60} height={30}/>
         </a>
         <ul className="hidden md:flex w-[550px] items-center justify-between h-full ">
           {Navlinks.map((link) => (
-            <li key={link.id} className="cursor-pointer p-4 hover:text-zinc-400 transition-colors">
-              <a href={link.path}>{link.name}</a>
-            </li>
+              <a href={link.path} key={link.id} className="cursor-pointer p-4 hover:text-zinc-400 transition-colors" onClick={handleToggle}>{link.name}</a>
           ))}
         </ul>
         <button onClick={handleToggle} className="block md:hidden">
