@@ -1,16 +1,10 @@
 import { CgClose, CgProfile } from "react-icons/cg";
 import {MdMenu, MdOutlineLooks3, MdOutlineLooksOne, MdOutlineLooksTwo } from "react-icons/md";
 import Logo from '../Assets/transparent_logo.png'
-import Html from '../Assets/HTML.png';
-import Css from '../Assets/CSS.png';
-import JS from '../Assets/JS.png';
-import React from "../Assets/REACT.png";
-import TS from "../Assets/TYPESCRIPT.png";
-import git from '../Assets/GIT.png';
-import figma from '../Assets/FIGMA.png';
-import mongodb from '../Assets/MONGODB.png';
-import python from '../Assets/PYTHON.png';
-import tailwind from '../Assets/TAILWIND.png';
+import { FaCss3Alt, FaFigma, FaGitAlt, FaHtml5, FaPython, FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiMongodb, SiTypescript } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 export const icons = {
   open: MdMenu,
@@ -70,52 +64,52 @@ export const AboutInfo = [
 export const SkillsLogo = [
   {
     id: 1,
-    icon: Html,
+    icon: FaHtml5,
     title: 'HTML'
   },
   {
     id: 2,
-    icon: Css,
+    icon: FaCss3Alt,
     title: 'CSS'
   },
   {
     is: 3,
-    icon: JS,
+    icon: IoLogoJavascript,
     title: "Javascript"
   },
   {
     id: 4,
-    icon: React,
+    icon: FaReact,
     title: 'React'
   },
   {
     id: 5,
-    icon: TS,
+    icon: SiTypescript,
     title: "Typescript"
   },
   {
     id: 6,
-    icon: tailwind,
+    icon: RiTailwindCssFill,
     title: "Tailwind CSS"
   },
   {
     id: 7,
-    icon: mongodb,
+    icon: SiMongodb,
     title: 'MongoDb'
   },
   {
     id: 8,
-    icon: python,
+    icon: FaPython,
     title: 'Python'
   },
   {
     id: 9,
-    icon: git,
+    icon: FaGitAlt,
     title: 'Github'
   },
   {
     id: 10,
-    icon: figma,
+    icon: FaFigma,
     title: 'Figma'
   }
 ]
