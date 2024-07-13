@@ -1,6 +1,16 @@
 import { CgClose, CgProfile } from "react-icons/cg";
 import {MdMenu, MdOutlineLooks3, MdOutlineLooksOne, MdOutlineLooksTwo } from "react-icons/md";
 import Logo from '../Assets/transparent_logo.png'
+import Html from '../Assets/HTML.png';
+import Css from '../Assets/CSS.png';
+import JS from '../Assets/JS.png';
+import React from "../Assets/REACT.png";
+import TS from "../Assets/TYPESCRIPT.png";
+import git from '../Assets/GIT.png';
+import figma from '../Assets/FIGMA.png';
+import mongodb from '../Assets/MONGODB.png';
+import python from '../Assets/PYTHON.png';
+import tailwind from '../Assets/TAILWIND.png';
 
 export const icons = {
   open: MdMenu,
@@ -54,5 +64,58 @@ export const AboutInfo = [
     icon: MdOutlineLooks3,
     title: "UI/UX Design",
     text: "With a strong sense of aesthetics, I design user-friendly interfaces that provide a delightful user experience." 
+  }
+]
+
+export const SkillsLogo = [
+  {
+    id: 1,
+    icon: Html,
+    title: 'HTML'
+  },
+  {
+    id: 2,
+    icon: Css,
+    title: 'CSS'
+  },
+  {
+    is: 3,
+    icon: JS,
+    title: "Javascript"
+  },
+  {
+    id: 4,
+    icon: React,
+    title: 'React'
+  },
+  {
+    id: 5,
+    icon: TS,
+    title: "Typescript"
+  },
+  {
+    id: 6,
+    icon: tailwind,
+    title: "Tailwind CSS"
+  },
+  {
+    id: 7,
+    icon: mongodb,
+    title: 'MongoDb'
+  },
+  {
+    id: 8,
+    icon: python,
+    title: 'Python'
+  },
+  {
+    id: 9,
+    icon: git,
+    title: 'Github'
+  },
+  {
+    id: 10,
+    icon: figma,
+    title: 'Figma'
   }
 ]
