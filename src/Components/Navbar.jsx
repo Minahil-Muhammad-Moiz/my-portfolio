@@ -7,7 +7,7 @@ const Navbar = () => {
     setnavigation(!navigation);
   };
   return (
-    <nav className="fixed w-full">
+    <nav className="fixed w-full z-10">
       <div className="w-full bg-zinc-900 h-20 flex justify-between items-center text-white px-6 md:px-10 font-sans">
         <a href={'#home'} className="">
         <img src={Images.Logo} alt="MMM logo" width={60} height={30}/>
@@ -26,7 +26,7 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`md:hidden fixed bg-zinc-900 text-white z-50 h-full w-60 top-20 ease-in-out duration-700 text-center ${
+        className={`md:hidden fixed bg-zinc-900 text-white h-full w-60 top-20 ease-in-out duration-700 text-center ${
           navigation ? `right-0` : `-right-[100%] `
         }`}
       >
