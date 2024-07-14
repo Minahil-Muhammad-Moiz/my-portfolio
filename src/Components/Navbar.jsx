@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-10">
       <div className="w-full bg-zinc-900 h-20 flex justify-between items-center text-white px-6 md:px-10 font-sans">
-        <a href={'#home'} className="">
+        <a href='/' className="">
         <img src={Images.Logo} alt="MMM logo" width={60} height={30}/>
         </a>
         <ul className="hidden md:flex w-[550px] items-center justify-between h-full ">
