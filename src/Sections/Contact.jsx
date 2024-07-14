@@ -31,7 +31,7 @@ const Contact = () => {
     }
   };
   return (
-    <Section id="#contact">
+    <Section id="contact">
       <h1>Contact Me</h1>
       <form onSubmit={onSubmit}>
         <div>

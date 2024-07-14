@@ -12,7 +12,7 @@ const Skills = () => {
       <div className="flex flex-wrap items-center justify-center gap-8 my-24">
         {SkillsLogo.map((item) => (
           <div key={item.id} className="w-40 h-auto items-center flex flex-col ">
-            {<item.icon fontSize={100} className="bg-white"/>}
+            {<item.icon fontSize={100} className="bg-white text-black"/>}
             <p className="p-3 pt-7 font-normal text-xl text-white">
               {item.title}
             </p>
