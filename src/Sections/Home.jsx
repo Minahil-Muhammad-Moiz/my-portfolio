@@ -1,52 +1,33 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
 import { TypeAnimation } from "react-type-animation";
 import resume from "../Assets/Minahil Moiz.(Resume)docx.pdf";
 import Section from "../Components/Section";
+import Button from "../Components/Button";
 
 const Home = () => {
   return (
-    <Section id='home' className="h-[100vh] text-white mx-auto font-sans">
-      <Navbar />
-      <div className="px-10 flex justify-center h-full w-full items-center">
-        <div className="flex flex-col items-start justify-center">
-          <h1 className="font-bold mb-4">
-            <span className="text-4xl md:text-6xl">Minahil Muhammad Moiz</span>
-            <br />
-            <TypeAnimation
-              sequence={[
-                "Frontend Developer",
-                1000,
-                "React JS Developer",
-                1000,
-              ]}
-              wrapper="span"
-              speed={200}
-              style={{ fontSize: "2em", display: "inline-block" }}
-              repeat={Infinity}
-              className="z-0"
-            />
-          </h1>
-          <p className="text-zinc-300 mb-4 text-base md:text-lg font-thin">
-            I'm a Frontend Developer Dedicated to Creating Engaging and Dynamic
-            Web Applications.
-          </p>
+    <Section id="home" className="!h-[100vh] mx-auto ">
+      <div className="flex flex-col justify-center items-start lg:items-center h-full w-[80%] mx-auto ">
+        <h1>Minahil Muhammad Moiz</h1>
+        <div className="lg:text-lg font-semibold mb-2 text-sm">
+          <TypeAnimation
+            sequence={["Frontend Developer", 1000, "React JS Developer", 1000]}
+            wrapper="span"
+            speed={200}
+            style={{ fontSize: "2em", display: "inline-block" }}
+            repeat={Infinity}
+          />
+        </div>
+        <p>
+          I'm a Frontend Developer Dedicated to Creating Engaging and Dynamic
+          Web Applications.
+        </p>
 
-          <div className="w-[80%] h-12 flex items-center justify-start font-semibold">
-            <a
-              href={resume}
-              download={"Resume"}
-              className="mr-4 py-2 rounded-xl border-[3px] hover:bg-zinc-900 px-6 hover:text-white bg-zinc-200 text-zinc-800 "
-            >
-              Download CV
-            </a>
-            <a
-              href='#contact'
-              className="py-2 rounded-xl border-[3px] hover:bg-zinc-200 hover:text-zinc-900 px-6 bg-zinc-900"
-            >
-              Contact
-            </a>
-          </div>
+        <div className="w-full flex flex-col md:flex-row md:items-baseline lg:justify-center py-4 text-center">
+          <Button href={resume} download={"Resume"} className={'!mb-4'} white>
+            Download CV
+          </Button>
+          <Button href="#contact" className={``}>Contact</Button>
         </div>
       </div>
     </Section>
