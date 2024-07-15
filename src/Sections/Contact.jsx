@@ -1,14 +1,14 @@
-import React from "react";
 import Section from "../Components/Section";
-import { FiSend } from "react-icons/fi";
 import Swal from "sweetalert2";
+import Button from "../Components/Button";
+import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
 
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", ".");
+    formData.append("access_key", "ccf5871e-d129-455a-b99c-96613961b7de");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -32,34 +32,37 @@ const Contact = () => {
   };
   return (
     <Section id="contact">
-      <h1>Contact Me</h1>
-      <form onSubmit={onSubmit}>
-        <div>
+      <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-around bg-neutral-600 rounded-2xl h-auto w-full lg:max-w-[80%] mx-auto p-6 shadow-neutral-400 shadow-inner">
+        <div className="flex items-center justify-center flex-col">
+          <h2>Contact Me</h2>
+          <div className="hidden xl:block m-10 xl:mt-0">
+            <CircleGrid
+              position="relative"
+              color="rgb(244 244 245)"
+              size="250px"
+              zIndex={1}
+            />
+          </div>
+        </div>
+        <form
+          onSubmit={onSubmit}
+          className="w-full max-w-[450px] flex flex-col justify-center p-4 "
+        >
           <label for="name">Full Name</label>
-          <input
-            type="text"
-            placeholder="Enter your name"
-            name="name"
-            required
-          />
-        </div>
-        <div>
+          <input type="text" name="name" required />
           <label for="email">Email</label>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            name="email"
-            required
-          />
-        </div>
-        <div>
+          <input type="email" name="email" required />
           <label for="message">Message</label>
-          <textarea placeholder="Enter your message" name="message"></textarea>
-        </div>
-        <button type="submit">
-          Send <FiSend />
-        </button>
-      </form>
+          <textarea name="message" rows={5}></textarea>
+          <Button
+            type="submit"
+            className={`text-center mx-0 lg:mx-auto `}
+            white
+          >
+            Send
+          </Button>
+        </form>
+      </div>
     </Section>
   );
 };

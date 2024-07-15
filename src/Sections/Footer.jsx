@@ -1,14 +1,16 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import Section from "../Components/Section";
-import Button from '../Components/Button'
+import Button from "../Components/Button";
 
 const Footer = () => {
   return (
-    <Section className=''>
-      <footer className=" w-[80%] mx-auto">
+    <Section>
+      <footer className="w-[90%] md:w-[80%] mx-auto border-stone-400 border-t pt-4 px-6 md:px-10">
         <div className="flex items-center justify-between">
-          <p className="!my-auto">&#169; {new Date().getFullYear()}. All rights reserved.</p>
+          <p className="!my-auto">
+            &#169; {new Date().getFullYear()}. All rights reserved.
+          </p>
           <Button
             href="https://github.com/Minahil-Muhammad-Moiz"
             alt="github"

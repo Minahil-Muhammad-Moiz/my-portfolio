@@ -64,19 +64,16 @@ export const Images = {
 
 export const AboutInfo = [
   {
-    icon: MdOutlineLooksOne,
-    title: "Frontend Dev",
-    text: "I create clean, efficient, and scalable code to build engaging user interfaces.",
+    title: "Education",
+    text: "A 3rd year student of Software Engineering from UBIT, University of Karachi, with a strong foundation in computer science principles and a passion for continuous learning and innovation in the tech industry.",
   },
   {
-    icon: MdOutlineLooksTwo,
-    title: "Responsive Design",
-    text: "Ensuring that websites look and function flawlessly on any device is a top priority for me.",
+    title: "Profession",
+    text: "A Frontend Developer who can creat clean, efficient, and scalable code to build engaging user interfaces. Ensuring that websites look and function flawlessly on any device.",
   },
   {
-    icon: MdOutlineLooks3,
-    title: "UI/UX Design",
-    text: "With a strong sense of aesthetics, I design user-friendly interfaces that provide a delightful user experience.",
+    title: "Goals",
+    text: "Aim to deepen my expertise in advanced frontend frameworks and libraries, and expand my skill set to include backend development.",
   },
 ];
 

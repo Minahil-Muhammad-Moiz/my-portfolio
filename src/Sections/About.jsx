@@ -5,29 +5,26 @@ import { AboutInfo } from "../Constants";
 
 const About = () => {
   return (
-    <Section id="about" className="h-auto px-10 md:px-20 text-white">
-      <div className="flex flex-col items-center justify-center">
-        <h1>About Me</h1>
-        <div className="flex flex-wrap items-center justify-center">
-          <div>
+    <Section id="about" className={"!md:h-96"}>
+      <div className="flex flex-col xl:flex-row items-center justify-center w-full lg:max-w-[80%] p-6 mx-auto bg-neutral-600 rounded-2xl shadow-neutral-400 shadow-inner">
+        <div className="flex items-center justify-center flex-col">
+          <h2>About Me</h2>
+          <div className="hidden xl:block m-10 xl:mt-0">
             <CircleGrid
               position="relative"
-              color="#fff"
-              size="175px"
+              color="rgb(228 228 231)"
+              size="190px"
               zIndex={1}
             />
           </div>
-          <div className="flex flex-col items-center justify-center">
-            {AboutInfo.map((item) => (
-              <div className=" w-full flex items-center justify-start">
-                <div>{<item.icon fontSize={30} />}</div>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+        </div>
+        <div className="flex flex-col items-start justify-center w-full">
+          {AboutInfo.map((item) => (
+            <div>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </div>
+          ))}
         </div>
       </div>
     </Section>

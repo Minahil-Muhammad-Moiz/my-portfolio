@@ -1,9 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-      scroll-behavior: smooth;
-    }
+  html {
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
   }
+
+  h1 {
+    @apply text-5xl font-bold mb-2 md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold xl:mb-0 m-8 text-center;
+  }
+
+  h3 {
+    @apply text-xl font-medium;
+  }
+
+  p {
+    @apply text-zinc-300 mb-4 text-lg font-light
+  }
+
+  label {
+    @apply text-zinc-200 mt-4 text-lg font-medium
+  }
+
+  input {
+    @apply border-none text-zinc-100 bg-zinc-800 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-inset
+  }
+
+  textarea {
+    @apply border-none text-white bg-zinc-800 rounded-md p-2 mb-6 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-inset
+  }
+}

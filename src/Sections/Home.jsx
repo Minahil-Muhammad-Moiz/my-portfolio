@@ -6,7 +6,7 @@ import Button from "../Components/Button";
 
 const Home = () => {
   return (
-    <Section id="home" className="!h-[100vh] mx-auto ">
+    <Section id="home" className="!h-[100vh]">
       <div className="flex flex-col justify-center items-start lg:items-center h-full w-[80%] mx-auto ">
         <h1>Minahil Muhammad Moiz</h1>
         <div className="lg:text-lg font-semibold mb-2 text-sm">
@@ -24,10 +24,12 @@ const Home = () => {
         </p>
 
         <div className="w-full flex flex-col md:flex-row md:items-baseline lg:justify-center py-4 text-center">
-          <Button href={resume} download={"Resume"} className={'!mb-4'} white>
+          <Button href={resume} download={"Resume"} className={"!mb-4"} white>
             Download CV
           </Button>
-          <Button href="#contact" className={``}>Contact</Button>
+          <Button href="#contact" className={``}>
+            Contact
+          </Button>
         </div>
       </div>
     </Section>

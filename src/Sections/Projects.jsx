@@ -7,14 +7,14 @@ import Button from "../Components/Button";
 
 const Projects = () => {
   return (
-    <Section id="projects" >
+    <Section id="projects">
       <div className=" w-full md:w-[80%] flex flex-col mx-auto items-center">
         <h2>My Projects</h2>
-        <div className="text-white flex flex-wrap w-full items-center justify-center gap-6 relative ">
+        <div className="text-white flex flex-wrap w-full items-center justify-center gap-6 relative mt-8">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="max-w-[500px] h-auto rounded-2xl p-4 shadow-inner shadow-neutral-500 overflow-hidden relative group"
+              className="max-w-[500px] h-auto rounded-2xl p-4 shadow-inner shadow-neutral-500 overflow-hidden hover:scale-[1.05] transition-transform ease-in-out duration-500 relative group"
             >
               <img
                 src={project.image}

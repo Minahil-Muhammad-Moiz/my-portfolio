@@ -15,9 +15,9 @@ const Button = ({
     <a
       className={`${
         className ? className : ""
-      } mx-2 py-2 px-6 rounded-xl border-[3px] text-white font-semibold ${
+      } mx-2 py-2 px-6 rounded-xl border text-white font-semibold hover:scale-[1.05] transition-transform cursor-pointer ${
         white
-          ? "hover:shadow-inner hover:shadow-white hover:bg-zinc-900 px-6 hover:text-white bg-zinc-200 text-zinc-800 "
+          ? "hover:shadow-inner hover:shadow-white hover:bg-zinc-900 hover:text-white bg-zinc-200 text-zinc-800 "
           : "shadow-inner shadow-white hover:bg-zinc-200 hover:text-zinc-800  bg-zinc-900"
       }`}
       href={href}
