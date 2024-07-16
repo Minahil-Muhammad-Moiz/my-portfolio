@@ -41,4 +41,12 @@
   textarea {
     @apply border-none text-white bg-zinc-800 rounded-md p-2 mb-6 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-inset
   }
+
+  .container{
+    @apply flex flex-col justify-center items-center p-6 mx-auto h-full lg:w-[80%]
+  }
+
+  .grey-container{
+    @apply xl:flex-row xl:justify-around bg-neutral-600 rounded-2xl shadow-neutral-400 shadow-inner
+  }
 }

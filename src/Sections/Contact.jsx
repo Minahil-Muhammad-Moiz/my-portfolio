@@ -32,7 +32,7 @@ const Contact = () => {
   };
   return (
     <Section id="contact">
-      <div className="flex flex-col xl:flex-row items-center justify-center xl:justify-around bg-neutral-600 rounded-2xl h-auto w-full lg:max-w-[80%] mx-auto p-6 shadow-neutral-400 shadow-inner">
+      <div className="container grey-container">
         <div className="flex items-center justify-center flex-col">
           <h2>Contact Me</h2>
           <div className="hidden xl:block m-10 xl:mt-0">

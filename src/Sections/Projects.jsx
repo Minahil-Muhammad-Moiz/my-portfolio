@@ -8,7 +8,7 @@ import Button from "../Components/Button";
 const Projects = () => {
   return (
     <Section id="projects">
-      <div className=" w-full md:w-[80%] flex flex-col mx-auto items-center">
+      <div className="!p-0 container">
         <h2>My Projects</h2>
         <div className="text-white flex flex-wrap w-full items-center justify-center gap-6 relative mt-8">
           {projects.map((project) => (

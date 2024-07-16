@@ -6,7 +6,7 @@ import { AboutInfo } from "../Constants";
 const About = () => {
   return (
     <Section id="about" className={"!md:h-96"}>
-      <div className="flex flex-col xl:flex-row items-center justify-center w-full lg:max-w-[80%] p-6 mx-auto bg-neutral-600 rounded-2xl shadow-neutral-400 shadow-inner">
+      <div className="container grey-container">
         <div className="flex items-center justify-center flex-col">
           <h2>About Me</h2>
           <div className="hidden xl:block m-10 xl:mt-0">

@@ -7,7 +7,7 @@ import Button from "../Components/Button";
 const Home = () => {
   return (
     <Section id="home" className="!h-[100vh]">
-      <div className="flex flex-col justify-center items-start lg:items-center h-full md:w-[80%] mx-auto ">
+      <div className="items-start lg:items-center !md:w-[80%] container">
         <h1>Minahil Muhammad Moiz</h1>
         <div className="lg:text-lg font-semibold mb-2 text-xs sm:text-sm">
           <TypeAnimation
