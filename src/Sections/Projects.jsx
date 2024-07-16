@@ -23,7 +23,7 @@ const Projects = () => {
                 alt="project"
                 className="w-full rounded-2xl opacity-100 block h-auto transition-opacity ease-in-out duration-500 group-hover:opacity-30"
               />
-              <div className="flex group-hover:opacity-100 transition-opacity duration-500 ease-in-out absolute opacity-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-2xl">
+              <div className="flex text-xl justify-center pt-4 group-hover:scale-[1.1] transition-all duration-500 ease-in-out">
                 <Button
                   href={project.gitUrl}
                   title="Code"
