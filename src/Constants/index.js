@@ -106,7 +106,7 @@ export const SkillsLogo = [
   {
     id: 6,
     icon: RiTailwindCssFill,
-    title: "Tailwind CSS",
+    title: "Tailwind",
   },
   {
     id: 7,

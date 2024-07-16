@@ -7,8 +7,8 @@ const Navbar = () => {
     setnavigation(!navigation);
   };
   return (
-    <nav className="fixed w-full z-10 ">
-      <div className="w-full bg-neutral-900 h-20 flex justify-between items-center text-white px-6 md:px-10 font-sans opacity-95">
+    <header className="fixed z-10 w-full">
+      <nav className="bg-neutral-900 h-20 flex justify-between items-center text-white px-6 md:px-10 font-sans opacity-95">
         <a href="/">
           <img src={Images.Logo} alt="MMM logo" width={60} height={30} />
         </a>
@@ -31,24 +31,24 @@ const Navbar = () => {
             <icons.open fontSize={30} title="open" />
           )}
         </button>
-      </div>
-      <div
-        className={`lg:hidden fixed bg-neutral-900 text-white h-full w-60 top-20 ease-in-out duration-700 text-center opacity-95 ${
-          navigation ? `right-0` : `-right-[100%] `
-        }`}
-      >
-        <ul className="flex flex-col items-center p-4">
-          {Navlinks.map((link) => (
-            <li
-              key={link.id}
-              className="cursor-pointer px-auto py-4 hover:text-zinc-400 transition-colors"
-            >
-              <a href={link.path}>{link.name}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </nav>
+        <div
+          className={`lg:hidden fixed bg-neutral-900 text-white h-full w-60 top-20 ease-in-out duration-700 text-center opacity-95 ${
+            navigation ? `right-0` : `-right-[100%] `
+          }`}
+        >
+          <ul className="flex flex-col items-center p-4">
+            {Navlinks.map((link) => (
+              <li
+                key={link.id}
+                className="cursor-pointer px-auto py-4 hover:text-zinc-400 transition-colors"
+              >
+                <a href={link.path}>{link.name}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+    </header>
   );
 };
 
