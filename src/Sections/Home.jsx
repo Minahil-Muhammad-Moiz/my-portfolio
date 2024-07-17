@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import resume from "../Assets/Minahil Moiz.(Resume)docx.pdf";
+import resume from "../Assets/Minahil Muhammad Moiz.pdf";
 import Section from "../Components/Section";
 import Button from "../Components/Button";
 
