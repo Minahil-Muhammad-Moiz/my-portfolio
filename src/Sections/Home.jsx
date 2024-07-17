@@ -7,9 +7,9 @@ import Button from "../Components/Button";
 const Home = () => {
   return (
     <Section id="home" className="!h-[100vh]">
-      <div className="items-start lg:items-center !md:w-[80%] container">
+      <div className="items-start lg:items-center !md:w-[80%] container !px-0">
         <h1>Minahil Muhammad Moiz</h1>
-        <div className="lg:text-lg font-semibold mb-2 text-xs sm:text-sm">
+        <div className="lg:text-lg sm:font-semibold mb-2 text-xs sm:text-sm">
           <TypeAnimation
             sequence={["Frontend Developer", 1000, "React JS Developer", 1000]}
             wrapper="span"

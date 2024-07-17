@@ -12,7 +12,7 @@ const Navbar = () => {
         <a href="/">
           <img src={Images.Logo} alt="MMM logo" width={60} height={30} />
         </a>
-        <ul className="hidden lg:flex w-[550px] items-center justify-between h-full ">
+        <ul className="hidden lg:flex w-[550px] items-center justify-between h-full font-bold">
           {Navlinks.map((link) => (
             <a
               href={link.path}
@@ -32,15 +32,15 @@ const Navbar = () => {
           )}
         </button>
         <div
-          className={`lg:hidden fixed bg-neutral-900 text-white h-full w-60 top-20 ease-in-out duration-700 text-center opacity-95 ${
+          className={`lg:hidden fixed bg-neutral-900 text-white h-full w-60 top-20 ease-in-out duration-700 opacity-95 ${
             navigation ? `right-0` : `-right-[100%] `
           }`}
         >
-          <ul className="flex flex-col items-center p-4">
+          <ul className="flex flex-col items-center py-4">
             {Navlinks.map((link) => (
               <li
                 key={link.id}
-                className="cursor-pointer px-auto py-4 hover:text-zinc-400 transition-colors"
+                className="cursor-pointer px-auto  py-6 md:py-8 hover:text-zinc-400 transition-colors font-bold"
               >
                 <a href={link.path}>{link.name}</a>
               </li>

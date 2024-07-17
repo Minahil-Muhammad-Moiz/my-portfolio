@@ -5,7 +5,7 @@ import { SkillsLogo } from "../Constants";
 const Skills = () => {
   return (
     <Section id="skills">
-      <div className="container">
+      <div className="container !px-0">
         <h2>Skills</h2>
         <div className="flex flex-wrap items-center justify-center gap-5 sm:gap-8 mt-8">
           {SkillsLogo.map((item) => (
