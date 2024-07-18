@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Navlinks, icons, Images } from "../Constants/index";
+import { ProgressBar } from "./ProgressBar";
 
 const Navbar = () => {
   const [navigation, setnavigation] = useState(false);
+
   const handleToggle = () => {
     setnavigation(!navigation);
   };
@@ -48,6 +50,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+      <ProgressBar />
     </header>
   );
 };

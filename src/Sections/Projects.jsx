@@ -10,7 +10,7 @@ const Projects = () => {
     <Section id="projects">
       <div className="!p-0 container">
         <h2>My Projects</h2>
-        <div className="text-white flex flex-wrap w-full items-center justify-center gap-6 relative mt-8">
+        <div className="text-white flex flex-wrap w-full items-center justify-center gap-6 xl:gap-10 relative mt-8">
           {projects.map((project) => (
             <div
               key={project.id}
