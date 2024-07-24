@@ -2,6 +2,7 @@ import Section from "../Components/Section";
 import Swal from "sweetalert2";
 import Button from "../Components/Button";
 import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const onSubmit = async (event) => {
@@ -32,7 +33,16 @@ const Contact = () => {
   };
   return (
     <Section id="contact">
-      <div className="container grey-container">
+      <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 10,
+          delay: 0.8,
+        }}
+        viewport={{ once: true }} div className="container grey-container">
         <div className="flex items-center justify-center flex-col">
           <h2>Contact Me</h2>
           <div className="hidden xl:block m-10 xl:mt-0">
@@ -62,7 +72,7 @@ const Contact = () => {
             Send
           </Button>
         </form>
-      </div>
+      </motion.div>
     </Section>
   );
 };

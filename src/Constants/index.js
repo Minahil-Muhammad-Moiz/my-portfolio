@@ -1,10 +1,5 @@
 import { CgClose } from "react-icons/cg";
-import {
-  MdMenu,
-  MdOutlineLooks3,
-  MdOutlineLooksOne,
-  MdOutlineLooksTwo,
-} from "react-icons/md";
+import { MdMenu } from "react-icons/md";
 import Logo from "../Assets/transparent_logo.png";
 import {
   FaCss3Alt,
@@ -24,6 +19,7 @@ import lawconnect from "../Assets/lawconnect.png";
 import nikeclone from "../Assets/nikeclone.png";
 import taskifies from "../Assets/taskifies.png";
 import weatherapp from "../Assets/weatherapp.png";
+import jetChalice from "../Assets/jetChalice.png";
 
 export const icons = {
   open: MdMenu,
@@ -139,9 +135,9 @@ export const projects = [
   },
   {
     id: 2,
-    image: dashboard,
-    demo: "https://openshop-dash.netlify.app/",
-    gitUrl: "https://github.com/Minahil-Muhammad-Moiz/openshop-dashboard",
+    image: jetChalice,
+    demo: "https://jetchalice.netlify.app/",
+    gitUrl: "https://github.com/Minahil-Muhammad-Moiz/coffeeShop",
   },
   {
     id: 3,
@@ -157,17 +153,23 @@ export const projects = [
   },
   {
     id: 5,
+    image: dashboard,
+    demo: "https://openshop-dash.netlify.app/",
+    gitUrl: "https://github.com/Minahil-Muhammad-Moiz/openshop-dashboard",
+  },
+  {
+    id: 6,
     image: weatherapp,
     demo: "https://minahil-muhammad-moiz.github.io/react-weather-app/",
     gitUrl: "https://github.com/Minahil-Muhammad-Moiz/react-weather-app",
   },
   {
-    id: 6,
+    id: 7,
     image: cartapp,
     gitUrl: "https://github.com/Minahil-Muhammad-Moiz/react-redux",
   },
   {
-    id: 7,
+    id: 8,
     image: nikeclone,
     gitUrl: "https://github.com/Minahil-Muhammad-Moiz/NikeClone",
   },

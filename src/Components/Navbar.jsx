@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Navlinks, icons, Images } from "../Constants/index";
 import { ProgressBar } from "./ProgressBar";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [navigation, setnavigation] = useState(false);
@@ -9,7 +10,17 @@ const Navbar = () => {
     setnavigation(!navigation);
   };
   return (
-    <header className="fixed z-10 w-full">
+    <motion.header
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+        delay: 0.8,
+      }}
+      className="fixed z-10 w-full"
+    >
       <nav className="bg-neutral-900 h-20 flex justify-between items-center text-white px-6 md:px-10 font-sans opacity-95">
         <a href="/">
           <img src={Images.Logo} alt="MMM logo" width={60} height={30} />
@@ -51,7 +62,7 @@ const Navbar = () => {
         </div>
       </nav>
       <ProgressBar />
-    </header>
+    </motion.header>
   );
 };
 

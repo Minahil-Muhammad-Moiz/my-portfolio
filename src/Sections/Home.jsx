@@ -3,11 +3,22 @@ import { TypeAnimation } from "react-type-animation";
 import resume from "../Assets/Minahil CV.pdf";
 import Section from "../Components/Section";
 import Button from "../Components/Button";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <Section id="home" className="!h-[100vh]">
-      <div className="items-start lg:items-center !md:w-[80%] container !px-0">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 10,
+          delay: 0.4,
+        }}
+        className="items-start lg:items-center !md:w-[80%] container !px-0"
+      >
         <h1>Minahil Muhammad Moiz</h1>
         <div className="lg:text-lg sm:font-semibold mb-2 text-xs sm:text-sm">
           <TypeAnimation
@@ -23,15 +34,25 @@ const Home = () => {
           Web Applications.
         </p>
 
-        <div className="w-full flex flex-col md:flex-row md:items-baseline lg:justify-center py-4 text-center">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 10,
+            delay: 0.8,
+          }}
+          className="w-full flex flex-col md:flex-row md:items-baseline lg:justify-center py-4 text-center"
+        >
           <Button href={resume} download={"Resume"} className={"!mb-4"} white>
             Download CV
           </Button>
           <Button href="#contact" className={``}>
             Contact
           </Button>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </Section>
   );
 };

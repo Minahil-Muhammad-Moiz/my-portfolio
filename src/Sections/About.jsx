@@ -2,11 +2,23 @@ import React from "react";
 import Section from "../Components/Section";
 import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
 import { AboutInfo } from "../Constants";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <Section id="about" className={"!md:h-96"}>
-      <div className="container grey-container">
+      <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 10,
+          delay: 0.8,
+        }}
+        viewport={{ once: true }}
+        className="container grey-container"
+      >
         <div className="flex items-center justify-center flex-col">
           <h2>About Me</h2>
           <div className="hidden xl:block m-10 xl:mt-0">
@@ -26,7 +38,7 @@ const About = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </Section>
   );
 };
